@@ -19,7 +19,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased h-full bg-background">
+      <body className="font-body antialiased h-full bg-background" suppressHydrationWarning>
         {children}
         <Toaster />
       </body>
