@@ -47,6 +47,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useToast } from "@/hooks/use-toast";
 import { generateGroupNamesAction } from "./actions";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 type RowData = Record<string, any>;
 
@@ -249,7 +250,10 @@ export default function XLSXGrouperPage() {
   };
 
   return (
-    <main className="container mx-auto p-4 md:p-8">
+    <main className="container mx-auto p-4 md:p-8 relative">
+      <div className="absolute top-8 right-8">
+        <ThemeToggle />
+      </div>
       <div className="flex flex-col items-center text-center mb-8">
         <div className="mb-4 flex items-center gap-3 text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-indigo-600">
            <Users className="h-10 w-10 text-purple-500"/> XLSX Grouper
