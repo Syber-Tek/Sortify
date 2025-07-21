@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'XLSX Grouper',
-  description: 'Group and organize your XLSX data with ease.',
+  title: 'Sortify',
+  description: 'Group and download Excel data effortlessly with Sortify.',
 };
 
 export default function RootLayout({
